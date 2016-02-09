@@ -323,6 +323,7 @@ jenkins::plugin {
 
 jenkins::plugin {
   'swarm':
+    version => '2.0', # if undef installs latest version
     require => Package['wget'];
 }
 
